@@ -75,7 +75,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)\common</IncludePath>
+    <IncludePath>$(ProjectDir)\ms;$(ProjectDir)\sys;$(ProjectDir);$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)\common</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -83,7 +83,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)\common</IncludePath>
+    <IncludePath>$(ProjectDir)\ms;$(ProjectDir)\sys;$(ProjectDir);$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)\common</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -148,7 +148,37 @@
   <ItemGroup>
     <ClInclude Include="apriltag.h" />
     <ClInclude Include="apriltag_math.h" />
+    <ClInclude Include="common\doubles.h" />
+    <ClInclude Include="common\doubles_floats_impl.h" />
+    <ClInclude Include="common\floats.h" />
+    <ClInclude Include="common\g2d.h" />
+    <ClInclude Include="common\getopt.h" />
+    <ClInclude Include="common\homography.h" />
+    <ClInclude Include="common\image_f32.h" />
+    <ClInclude Include="common\image_types.h" />
+    <ClInclude Include="common\image_u8.h" />
+    <ClInclude Include="common\image_u8x3.h" />
+    <ClInclude Include="common\image_u8x4.h" />
+    <ClInclude Include="common\matd.h" />
+    <ClInclude Include="common\math_util.h" />
+    <ClInclude Include="common\pam.h" />
+    <ClInclude Include="common\pjpeg.h" />
+    <ClInclude Include="common\pnm.h" />
+    <ClInclude Include="common\postscript_utils.h" />
+    <ClInclude Include="common\string_util.h" />
+    <ClInclude Include="common\svd22.h" />
+    <ClInclude Include="common\thash_impl.h" />
+    <ClInclude Include="common\timeprofile.h" />
+    <ClInclude Include="common\time_util.h" />
+    <ClInclude Include="common\unionfind.h" />
+    <ClInclude Include="common\workerpool.h" />
+    <ClInclude Include="common\zarray.h" />
+    <ClInclude Include="common\zhash.h" />
+    <ClInclude Include="common\zmaxheap.h" />
+    <ClInclude Include="ms\stdint2.h" />
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="sys\time.h" />
+    <ClInclude Include="sys\types.h" />
     <ClInclude Include="tag16h5.h" />
     <ClInclude Include="tag25h7.h" />
     <ClInclude Include="tag25h9.h" />
@@ -161,6 +191,26 @@
     <ClCompile Include="apriltag.c" />
     <ClCompile Include="AprilTag.cpp" />
     <ClCompile Include="apriltag_quad_thresh.c" />
+    <ClCompile Include="common\g2d.c" />
+    <ClCompile Include="common\getopt.c" />
+    <ClCompile Include="common\homography.c" />
+    <ClCompile Include="common\image_f32.c" />
+    <ClCompile Include="common\image_u8.c" />
+    <ClCompile Include="common\image_u8x3.c" />
+    <ClCompile Include="common\image_u8x4.c" />
+    <ClCompile Include="common\matd.c" />
+    <ClCompile Include="common\pam.c" />
+    <ClCompile Include="common\pjpeg-idct.c" />
+    <ClCompile Include="common\pjpeg.c" />
+    <ClCompile Include="common\pnm.c" />
+    <ClCompile Include="common\string_util.c" />
+    <ClCompile Include="common\svd22.c" />
+    <ClCompile Include="common\time_util.c" />
+    <ClCompile Include="common\unionfind.c" />
+    <ClCompile Include="common\workerpool.c" />
+    <ClCompile Include="common\zarray.c" />
+    <ClCompile Include="common\zhash.c" />
+    <ClCompile Include="common\zmaxheap.c" />
     <ClCompile Include="stdafx.cpp" />
     <ClCompile Include="tag16h5.c" />
     <ClCompile Include="tag25h7.c" />

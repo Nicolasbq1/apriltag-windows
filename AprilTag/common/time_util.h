@@ -37,7 +37,7 @@ either expressed or implied, of the Regents of The University of Michigan.
 #include <stdint.h>
 #include <sys/time.h>
 #include <time.h>
-#include <unistd.h>
+//#include <unistd.h>
 
 #ifdef __cplusplus
 extern "C" {

@@ -33,6 +33,8 @@ either expressed or implied, of the Regents of The University of Michigan.
 #include <stdlib.h>
 #include <math.h>
 #include "time_util.h"
+#include "types.h"
+#include "time.h"
 
 struct timeutil_rest
 {

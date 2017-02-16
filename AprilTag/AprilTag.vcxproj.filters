@@ -45,6 +45,96 @@
     <ClInclude Include="apriltag.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="common\matd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\math_util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\pam.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\pjpeg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\pnm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\postscript_utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\string_util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\svd22.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\thash_impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\time_util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\timeprofile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\unionfind.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\workerpool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\zarray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\zhash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\zmaxheap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\doubles.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\doubles_floats_impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\floats.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\g2d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\getopt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\homography.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\image_f32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\image_types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\image_u8.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\image_u8x3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\image_u8x4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sys\time.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sys\types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ms\stdint2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -75,6 +165,66 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="tag16h5.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\workerpool.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\zarray.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\zhash.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\zmaxheap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\g2d.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\getopt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\homography.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\image_f32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\image_u8.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\image_u8x3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\image_u8x4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\matd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\pam.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\pjpeg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\pjpeg-idct.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\pnm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\string_util.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\svd22.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\time_util.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\unionfind.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -32,6 +32,7 @@ either expressed or implied, of the Regents of The University of Michigan.
 
 #include "apriltag.h"
 
+#include <vector>
 #include <math.h>
 #include <assert.h>
 #include <stdint.h>
@@ -54,6 +55,8 @@ either expressed or implied, of the Regents of The University of Michigan.
 #include "apriltag_math.h"
 
 #include "common/postscript_utils.h"
+#include "ms/stdint2.h"
+
 
 #ifndef M_PI
 # define M_PI 3.141592653589793238462643383279502884196
@@ -107,6 +110,11 @@ double graymodel_interpolate(struct graymodel *gm, double x, double y)
 {
     return gm->C[0]*x + gm->C[1]*y + gm->C[2];
 }
+
+//typedef unsigned __int64     uint64_t;
+
+
+
 
 struct quick_decode_entry
 {
@@ -1224,7 +1232,10 @@ zarray_t *apriltag_detector_detect(apriltag_detector_t *td, image_u8_t *im_orig)
 
         int chunksize = 1 + zarray_size(quads) / (APRILTAG_TASKS_PER_THREAD_TARGET * td->nthreads);
 
-        struct quad_decode_task tasks[zarray_size(quads) / chunksize + 1];
+		int tasksize = zarray_size(quads) / chunksize + 1;
+
+        //struct quad_decode_task tasks;
+		vector<quad_decode_task> tasks(tasksize);
 
         int ntasks = 0;
         for (int i = 0; i < zarray_size(quads); i+= chunksize) {
